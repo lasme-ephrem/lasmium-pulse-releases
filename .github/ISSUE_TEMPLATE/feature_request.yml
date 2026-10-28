@@ -1,0 +1,20 @@
+name: Idea
+description: A feature or an improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The need
+      description: What you are trying to do and what is missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you have in mind
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Screenshots, links, examples from other tools.

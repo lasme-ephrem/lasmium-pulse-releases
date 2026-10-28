@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Full-bleed dark carbon hardware keycap background (no white margin) -->
+  <rect width="64" height="64" rx="14" fill="#121211"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#2A2A27" stroke-width="2"/>
+
+  <!-- Outer 4-Quadrant Aperture Brackets (Full-size in icon) -->
+  <path d="M10 24V17C10 13.134 13.134 10 17 10H25" stroke="#F4F1EA" stroke-width="5" stroke-linecap="square"/>
+  <path d="M54 24V17C54 13.134 50.866 10 47 10H39" stroke="#F4F1EA" stroke-width="5" stroke-linecap="square"/>
+  <path d="M10 40V47C10 50.866 13.134 54 17 54H25" stroke="#F4F1EA" stroke-width="5" stroke-linecap="square"/>
+  <path d="M54 40V47C54 50.866 50.866 54 47 54H39" stroke="#F4F1EA" stroke-width="5" stroke-linecap="square"/>
+
+  <!-- Inner Aperture Brackets -->
+  <path d="M19 24V20C19 18.8954 19.8954 18 21 18H25" stroke="#F4F1EA" stroke-width="3.8" stroke-linecap="square"/>
+  <path d="M45 24V20C45 18.8954 44.1046 18 43 18H39" stroke="#F4F1EA" stroke-width="3.8" stroke-linecap="square"/>
+  <path d="M19 40V44C19 45.1046 19.8954 46 21 46H25" stroke="#F4F1EA" stroke-width="3.8" stroke-linecap="square"/>
+  <path d="M45 40V44C45 45.1046 44.1046 46 43 46H39" stroke="#F4F1EA" stroke-width="3.8" stroke-linecap="square"/>
+
+  <!-- Vermilion Signal Pulse Waveform (#FF3E1D) Edge-to-Edge -->
+  <path d="M3 32H19.5L23.5 39.5L29.5 14L35 50L41 25L44.5 32H61" stroke="#FF3E1D" stroke-width="5.2" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

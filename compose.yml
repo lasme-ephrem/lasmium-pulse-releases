@@ -1,0 +1,25 @@
+# docker compose up -d   →   http://<machine>:3001
+services:
+  pulse:
+    image: ghcr.io/lasme-ephrem/lasmium-pulse:latest
+    # Or build from this checkout:
+    # build: .
+    container_name: lasmium-pulse
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      # Encrypts the Twitch session on the volume (16 characters minimum) — required
+      PULSE_SECRET: "${PULSE_SECRET:?PULSE_SECRET est obligatoire (16 caractères minimum)}"
+      # Asked by the browser before any access (8 characters minimum) — recommended on a LAN
+      PULSE_PASSWORD: "${PULSE_PASSWORD:-}"
+      # Public Twitch application Client ID (sign-in, chat, clips, notifications)
+      TWITCH_APP_CLIENT_ID: "${TWITCH_APP_CLIENT_ID:-}"
+      # Extra host names the app may be reached by (comma separated), e.g. pulse.local
+      PULSE_ALLOWED_HOSTS: "${PULSE_ALLOWED_HOSTS:-}"
+      PULSE_LOG_LEVEL: "${PULSE_LOG_LEVEL:-info}"
+    volumes:
+      - pulse-data:/data
+
+volumes:
+  pulse-data:
